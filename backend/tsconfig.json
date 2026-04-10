@@ -1,23 +1,17 @@
 {
   "compilerOptions": {
-
     "outDir": "./dist",
-
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "target": "es2023",
-    "types": [
-      "node"
-    ],
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
     "resolveJsonModule": true,
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": false,
-
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedParameters": false,
     "strict": true,
     "jsx": "react-jsx",
     "verbatimModuleSyntax": false,
@@ -27,5 +21,5 @@
     "skipLibCheck": true,
   },
   "exclude": ["node_modules"],
-  "include": ["src/**/*.ts", "*.ts"]
+  "include": ["src/**/*.ts", "*.ts", ".js"]
 }

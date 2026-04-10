@@ -4,5 +4,5 @@ export type receita = {
     nome: string,
     tempoPreparo: number,
     custoAproximado: number,
-    ingredientes: ingrediente[]
+    ingredientes?: ingrediente[]
 };

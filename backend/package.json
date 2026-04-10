@@ -1,11 +1,11 @@
 {
   "name": "backed",
   "version": "0",
-  "main": "index.js",
+  "main": "server.ts",
   "scripts": {
     "build": "npx tsc",
     "prestart": "npm run build",
-    "start": "npx nodemon dist/index.js",
+    "start": "node dist/src/server.js",
     "dev": "npx concurrently --kill-others \"npm run watch\" \"npm start\""
   },
   "devDependencies": {
@@ -20,6 +20,7 @@
     "@prisma/adapter-pg": "^7.7.0",
     "@prisma/client": "^7.7.0",
     "concurrently": "^9.2.1",
+    "cors": "^2.8.6",
     "express": "^5.2.1",
     "nodemon": "^3.1.14",
     "pg": "^8.20.0"

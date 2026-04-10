@@ -1,17 +1,15 @@
-version: '3.8'
 
 services:
   db:
-    image: postgres:latest
+    image: postgres:16
     container_name: postgres_db
     environment:
-      POSTGRES_USER: usario
-      POSTGRES_PASSWORD: senhaXX
-      POSTGRES_DB: app
+      POSTGRES_USER: pedro
+      POSTGRES_PASSWORD: pedro
+      POSTGRES_DB: postgres
     ports:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
-
 volumes:
   pgdata:
